@@ -1,0 +1,25 @@
+{
+  "name": "flow-type-example",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "repository": "https://github.com/kunal-mandalia/flow-type-example.git",
+  "author": "Kunal Mandalia <kunal.v.mandalia@gmail.com> (http://kunalmandalia.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
+    "babel-preset-flow": "6.23.0",
+    "flow-bin": "0.81.0",
+    "jest": "23.6.0"
+  },
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "4.16.3",
+    "flow": "0.2.3"
+  }
+}
