@@ -9,5 +9,9 @@ A demo of static types with flow.js with node.js
 ## Test
 * `yarn test`
 
+## Start
+* `yarn start`
+* `curl -XGET http://localhost:5000/square/5` // { result: 25 }
+
 ## Build
 * `yarn build`
